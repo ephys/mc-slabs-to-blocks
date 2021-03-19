@@ -11,6 +11,10 @@ const modsFolder = path.join(__dirname, 'mods');
   const mods = await fs.readdir(modsFolder);
 
   for (const modFileName of mods) {
+    if (modFileName === '.gitkeep') {
+      continue;
+    }
+
     const zipBuffer = await fs.readFile(path.join(modsFolder, modFileName));
     const zip = await Zip.loadAsync(zipBuffer);
 
