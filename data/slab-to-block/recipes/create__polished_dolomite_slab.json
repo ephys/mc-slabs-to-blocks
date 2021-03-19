@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slab_to_block",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "create:polished_dolomite_slab"
+    }
+  },
+  "result": {
+    "item": "create:polished_dolomite",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

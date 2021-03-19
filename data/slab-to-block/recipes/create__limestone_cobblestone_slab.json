@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slab_to_block",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "create:limestone_cobblestone_slab"
+    }
+  },
+  "result": {
+    "item": "create:limestone_cobblestone",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

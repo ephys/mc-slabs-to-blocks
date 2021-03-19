@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slab_to_block",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "botania:dreamwood_slab"
+    }
+  },
+  "result": {
+    "item": "botania:dreamwood",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botania"
+    }
+  ]
+}

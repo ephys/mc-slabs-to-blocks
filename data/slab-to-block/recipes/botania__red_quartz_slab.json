@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slab_to_block",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "botania:red_quartz_slab"
+    }
+  },
+  "result": {
+    "item": "botania:red_quartz",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "botania"
+    }
+  ]
+}

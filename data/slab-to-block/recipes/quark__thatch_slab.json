@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slab_to_block",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "quark:thatch_slab"
+    }
+  },
+  "result": {
+    "item": "quark:thatch",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "quark"
+    }
+  ]
+}
