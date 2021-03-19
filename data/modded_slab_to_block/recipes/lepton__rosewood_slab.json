@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slabs_to_blocks",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "lepton:rosewood_slab"
+    }
+  },
+  "result": {
+    "item": "atmospheric:rosewood",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "lepton"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ]
+}

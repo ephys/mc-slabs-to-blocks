@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "gen-json": "ts-node datagen.ts",
-    "gen-datapack": "build-datapack.sh"
+    "gen-datapack": "./build-datapack.sh"
   },
   "author": "",
   "license": "MIT",

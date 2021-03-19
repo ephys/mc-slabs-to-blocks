@@ -1,3 +1,5 @@
 mods/*
 .idea
 node_modules
+
+/*.zip

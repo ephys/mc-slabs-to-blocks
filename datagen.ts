@@ -74,7 +74,7 @@ const modsFolder = path.join(__dirname, 'mods');
 
     const recipe = {
       type: 'minecraft:crafting_shaped',
-      group: 'slab_to_block',
+      group: 'slabs_to_blocks',
       pattern: [
         '##',
       ],
@@ -98,7 +98,7 @@ const modsFolder = path.join(__dirname, 'mods');
     const json = JSON.stringify(recipe, null, 2);
     const recipeName = slabId.replace(':', '__') + '.json';
 
-    await fs.writeFile(path.join(__dirname, 'data', 'slab-to-block', 'recipes', recipeName), json);
+    await fs.writeFile(path.join(__dirname, 'data', 'modded_slab_to_block', 'recipes', recipeName), json);
   }
 })();
 

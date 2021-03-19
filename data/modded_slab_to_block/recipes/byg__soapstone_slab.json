@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slabs_to_blocks",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "byg:soapstone_slab"
+    }
+  },
+  "result": {
+    "item": "byg:soapstone",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "byg"
+    }
+  ]
+}
