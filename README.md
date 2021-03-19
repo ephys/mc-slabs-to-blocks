@@ -6,6 +6,8 @@ This datapack adds recipes to craft two slabs back into the full block.
 
 Check the release tab for public releases.
 
+*This datapack does not include vanilla slab recipes, use [Vanilla Tweaks](https://vanillatweaks.net) for those*
+
 ## How to add support for new slabs ?
 
 Follow the following steps:
