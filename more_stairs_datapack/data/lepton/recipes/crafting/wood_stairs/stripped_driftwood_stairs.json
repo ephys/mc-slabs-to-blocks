@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wood_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "upgrade_aquatic:stripped_driftwood"
+    }
+  },
+  "result": {
+    "item": "lepton:stripped_driftwood_stairs",
+    "count": 8
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ]
+}

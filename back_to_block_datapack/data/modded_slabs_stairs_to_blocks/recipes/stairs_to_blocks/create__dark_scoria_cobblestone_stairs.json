@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stairs_to_blocks",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "create:dark_scoria_cobblestone_stairs"
+    }
+  },
+  "result": {
+    "item": "create:dark_scoria_cobblestone",
+    "count": 3
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}

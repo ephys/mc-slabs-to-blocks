@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wood_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "environmental:stripped_willow_wood"
+    }
+  },
+  "result": {
+    "item": "lepton:stripped_willow_wood_stairs",
+    "count": 8
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stairs_to_blocks",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "lepton:cracked_sandstone_stairs"
+    }
+  },
+  "result": {
+    "item": "lepton:cracked_sandstone",
+    "count": 3
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "lepton"
+    }
+  ]
+}

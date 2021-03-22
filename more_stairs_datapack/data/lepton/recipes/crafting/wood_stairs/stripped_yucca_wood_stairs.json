@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wood_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "atmospheric:stripped_yucca_wood"
+    }
+  },
+  "result": {
+    "item": "lepton:stripped_yucca_wood_stairs",
+    "count": 8
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ]
+}

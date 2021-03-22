@@ -8,7 +8,7 @@ Check the release tab for public releases.
 
 *This datapack does not include vanilla slab recipes, use [Vanilla Tweaks](https://vanillatweaks.net) for those*
 
-## How to add support for new slabs ?
+## How to add support for new slabs and stairs ?
 
 Follow the following steps:
 
@@ -19,9 +19,16 @@ Follow the following steps:
 
 ## I did all that, but the recipes did not generate
 
-That can be caused by a few reasons:
+That can be caused by a few reasons,  
+**for slabs**:
 
-- The mod did not tag the slabs with the `minecraft:slab` item tag.
+- The mod did not tag the slabs with the `minecraft:slabs` item tag.
 - The mod is missing one of these two recipes:
   - 3 full blocks for 6 slabs (crafting table, shaped).
   - 1 full block for 2 slabs (stone-cutter).
+
+**for stairs**:
+
+- The mod did not tag the slabs with the `minecraft:stairs` item tag.
+- The mod is missing the following recipe
+  - 6 full blocks for 4 stairs (crafting table, shaped like a stair).

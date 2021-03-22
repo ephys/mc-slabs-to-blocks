@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "quark:biotite_bricks"
+    }
+  },
+  "result": {
+    "item": "lepton:biotite_brick_stairs",
+    "count": 8
+  },
+  "conditions": [
+    {
+      "type": "abnormals_core:quark_flag",
+      "flag": "biotite"
+    }
+  ]
+}

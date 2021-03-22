@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "stairs_to_blocks",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "lepton:stripped_wisteria_wood_stairs"
+    }
+  },
+  "result": {
+    "item": "environmental:stripped_wisteria_wood",
+    "count": 3
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "lepton"
+    },
+    {
+      "type": "forge:mod_loaded",
+      "modid": "environmental"
+    }
+  ]
+}

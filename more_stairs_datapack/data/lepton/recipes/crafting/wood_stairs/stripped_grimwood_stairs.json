@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wood_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "atmospheric:stripped_grimwood"
+    }
+  },
+  "result": {
+    "item": "lepton:stripped_grimwood_stairs",
+    "count": 8
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "atmospheric"
+    }
+  ]
+}
