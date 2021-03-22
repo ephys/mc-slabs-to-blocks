@@ -4,7 +4,7 @@ This repository contains the source code for the Slabs to Block datapack.
 
 This datapack adds recipes to craft two slabs back into the full block.
 
-Check the release tab for public releases.
+Check the [release tab](https://github.com/Ephys/mc-slabs-to-blocks/releases) for public releases.
 
 *This datapack does not include vanilla slab recipes, use [Vanilla Tweaks](https://vanillatweaks.net) for those*
 
