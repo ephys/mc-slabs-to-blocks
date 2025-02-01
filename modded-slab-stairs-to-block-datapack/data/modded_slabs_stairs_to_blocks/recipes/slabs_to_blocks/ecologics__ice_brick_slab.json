@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slabs_to_blocks",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "ecologics:ice_brick_slab"
+    }
+  },
+  "result": {
+    "item": "ecologics:ice_bricks",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "ecologics"
+    }
+  ]
+}

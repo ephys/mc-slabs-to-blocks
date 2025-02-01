@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slabs_to_blocks",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "upgrade_aquatic:polar_kelpy_stone_brick_slab"
+    }
+  },
+  "result": {
+    "item": "upgrade_aquatic:polar_kelpy_stone_bricks",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "upgrade_aquatic"
+    }
+  ]
+}

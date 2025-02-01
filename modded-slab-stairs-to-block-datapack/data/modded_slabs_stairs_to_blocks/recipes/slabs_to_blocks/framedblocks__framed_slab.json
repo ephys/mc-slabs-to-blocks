@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "slabs_to_blocks",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "framedblocks:framed_slab"
+    }
+  },
+  "result": {
+    "item": "framedblocks:framed_cube",
+    "count": 1
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "framedblocks"
+    }
+  ]
+}

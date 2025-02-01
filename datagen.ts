@@ -13,7 +13,17 @@ const stairsJsonPath = 'data/minecraft/tags/items/stairs.json';
   const allSlabs = new Set<string>();
   const allStairs = new Set<string>();
 
-  const slabToBlock = new Map<string, string>();
+  const slabToBlock = new Map<string, string>([
+    ['botania:metamorphic_mountain_bricks_slab', 'botania:metamorphic_mountain_bricks'],
+    ['botania:metamorphic_plains_bricks_slab', 'botania:metamorphic_plains_bricks'],
+    ['quark:andesite_bricks_slab', 'quark:andesite_bricks'],
+    ['quark:diorite_bricks_slab', 'quark:diorite_bricks'],
+    ['quark:granite_bricks_slab', 'quark:granite_bricks'],
+    ['quark:jasper_bricks_slab', 'quark:jasper_bricks'],
+    ['quark:limestone_bricks_slab', 'quark:limestone_bricks'],
+    ['quark:myalite_bricks_slab', 'quark:myalite_bricks'],
+    ['quark:shale_bricks_slab', 'quark:shale_bricks'],
+  ]);
   const stairToBlock = new Map<string, string>();
   const stairRecipeJsonPaths = new Map<string, TShapedCraftingRecipe>();
 
@@ -193,7 +203,17 @@ async function extractMcTagValues(zip: JSZip, tagFilePath: string): Promise<Arra
 
   assert(slabTagDeclaration.replace !== 'true');
 
-  return slabTagDeclaration.values;
+  const tags = await Promise.all(slabTagDeclaration.values.map(async (value: string) => {
+    if (!value.startsWith('#')) {
+      return value;
+    }
+
+    const [modName, tagName] = value.substr(1).split(':');
+
+    return extractMcTagValues(zip, `data/${modName}/tags/items/${tagName}.json`);
+  }));
+
+  return tags.flat();
 }
 
 function addAll<T>(to: Set<T>, from: Iterable<T>): void {
@@ -212,7 +232,7 @@ function processStairRecipe(recipe: TShapedCraftingRecipe): { stairId: string, b
     return null;
   }
 
-  if (!isStairPattern(recipe.pattern)) {
+  if (!isStairPattern(recipe.pattern) && !isFlippedStairPattern(recipe.pattern)) {
     return null;
   }
 
@@ -298,6 +318,23 @@ function isStairPattern(pattern: Array<string>): boolean {
   }
 
   if (pattern[0] !== `${char}  ` || pattern[1] !== `${char}${char} ` || pattern[2] !== `${char}${char}${char}`) {
+    return false;
+  }
+
+  return true;
+}
+
+function isFlippedStairPattern(pattern: Array<string>): boolean {
+  if (pattern.length !== 3) {
+    return false;
+  }
+
+  const char = pattern[0].charAt(2);
+  if (char === ' ') {
+    return false;
+  }
+
+  if (pattern[0] !== `  ${char}` || pattern[1] !== ` ${char}${char}` || pattern[2] !== `${char}${char}${char}`) {
     return false;
   }
 

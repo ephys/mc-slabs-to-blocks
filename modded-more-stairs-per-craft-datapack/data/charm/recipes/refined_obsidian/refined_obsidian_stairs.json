@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "charm:refined_obsidian"
+    }
+  },
+  "result": {
+    "item": "charm:refined_obsidian_stairs",
+    "count": 8
+  },
+  "conditions": [
+    {
+      "type": "charm:module_enabled",
+      "module": "charm:refined_obsidian"
+    }
+  ]
+}
